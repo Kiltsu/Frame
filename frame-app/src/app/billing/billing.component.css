@@ -1,0 +1,13 @@
+.billing_item {
+  padding: 0.2em;
+}
+.billing_item div {
+  min-width: 10em;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+.long_text {
+  min-width: 20em;
+  height: 4em;
+}

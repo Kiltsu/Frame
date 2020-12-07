@@ -1,0 +1,27 @@
+<div class="login_prompt">
+  <div *ngIf="!logged">
+    <h1>Login</h1>
+    <form>
+      <div class="login_item">
+        <label for="username">Käyttäjänimi</label><input type="text" id="username" name="username" [(ngModel)]="username" />
+      </div>
+      <div class="login_item">
+        <label for="password">Salasana</label><input type="text" id="password" name="password" [(ngModel)]="password" />
+      </div>
+      <div class="login_item">
+        <button type="button" (click)="doLogin()">Kirjaudu</button>
+      </div>
+      <div>{{message}}</div>
+    </form>
+  </div>
+  <div *ngIf="logged">
+    <form>
+      <div class="login_item">
+        <label for="username">Tervetuloa </label>{{user.name}}
+      </div>
+      <div class="login_item">
+        <button type="button" (click)="doLogout()">Kirjaudu ulos</button>
+      </div>
+    </form>
+  </div>
+</div>

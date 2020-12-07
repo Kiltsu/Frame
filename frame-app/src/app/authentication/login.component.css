@@ -1,0 +1,7 @@
+.login_item {
+  padding: 0.2em;
+}
+.login_item label {
+  width: 10em;
+  display: inline-block;
+}

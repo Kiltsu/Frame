@@ -1,0 +1,18 @@
+.label {
+  font-size: 1.2em;
+  font-weight: 500;
+  background: #B176A9;
+  width: 100%;
+}
+.album_icon {
+  width: 100%;
+}
+.album {
+  display: inline-block;
+  padding: 1em;
+  max-width: 8em;
+}
+  .album:hover {
+    background: #580F4F;
+    border-radius: 2em;
+  }

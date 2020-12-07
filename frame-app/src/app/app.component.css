@@ -1,0 +1,96 @@
+h1 {
+  color: #580F4F;
+  font-size: 2em;
+}
+#background {
+  background: -webkit-linear-gradient(right, #B176A9, white, #B176A9);
+  background: -o-linear-gradient(right, #B176A9, white, #B176A9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #B176A9, white, #B176A9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #B176A9, white, #B176A9); /* Standard syntax */
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+#contact span {
+  width: 10em;
+  display: inline-block;
+}
+@media screen and (min-width: 960px) {
+  #main_nav {
+    text-align: center;
+  }
+
+  #main_nav a {
+    text-decoration: none;
+    border: 1px solid #934A8A;
+    color: black;
+    font-size: 2em;
+    font-weight: 800;
+    width: 20%;
+    max-width: 20em;
+    display: inline-block;
+    text-align: center;
+    background: #B176A9;
+    margin: 0;
+    padding: 2vh 1em;
+  }
+
+      #main_nav a:hover {
+        background: #934A8A;
+      }
+
+    #main_nav .active {
+      background: #580F4F;
+      color: white;
+    }
+  #content {
+    background: white;
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 2px 0 8px #888888 inset;
+    overflow: auto;
+    height: 72vh;
+    padding: 3vh 1em;
+    margin-bottom: 3vh;
+  }
+}
+@media screen and (max-width: 960px) {
+  #main_nav {
+    text-align: center;
+  }
+
+    #main_nav a {
+      text-decoration: none;
+      border: 1px solid #934A8A;
+      color: black;
+      font-size: 2em;
+      font-weight: 800;
+      width: 45%;
+      max-width: 500px;
+      display: block;
+      text-align: center;
+      background: #B176A9;
+      margin: 0 auto;
+      padding: 2vh 1em;
+    }
+
+      #main_nav a:hover {
+        background: #934A8A;
+      }
+
+    #main_nav .active {
+      background: #580F4F;
+      color: white;
+    }
+
+  #content {
+    background: white;
+    max-width: 100%;
+    margin: 0 0;
+    min-height: 72vh;
+    height: 100%;
+    padding: 0 0;
+    margin-bottom: 3vh;
+  }
+}

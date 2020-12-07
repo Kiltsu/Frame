@@ -1,0 +1,47 @@
+<div class="billing">
+  <form>
+    <h2>Myyjän tiedot</h2>
+    <div class="billing_item">
+      <div>Nimi</div>
+      <div>{{biller.name}}</div>
+    </div>
+    <div class="billing_item">
+      <div>Osoite</div>
+      <div>{{biller.address}} <br />{{biller.postNumber}} {{biller.state}}, {{biller.country}}</div>
+    </div>
+    <div class="billing_item">
+      <div>ALV-tunniste</div>
+      <div>{{biller.vatNumber}}</div>
+    </div>
+    <h2>Ostajan tiedot</h2>
+    <div class="billing_item">
+      <div>Nimi</div>
+      <input type="text" name="buyerName" [(ngModel)]="bill.buyerName" required />
+    </div>
+    <div class="billing_item">
+      <div>Osoite</div>
+      <input type="text" name="buyerAddress" [(ngModel)]="bill.buyerAddress" required />
+    </div>
+    <h2>Myynnin kohde</h2>
+    <div class="billing_item">
+      <div>Tuotteet/palvelut</div>
+      <input class="long_text" type="text" name="product" [(ngModel)]="bill.product" required />
+    </div>
+    <div class="billing_item">
+      <div>Hinta</div>
+      <input type="number" name="price" [(ngModel)]="bill.price" min="0" required />
+    </div>
+    <div class="billing_item">
+      <div>Alv</div>
+      <div *ngIf="bill.price">{{bill.price * 0.24}}</div>
+    </div>
+    <div class="billing_item">
+      <div>Yhteensä</div>
+      <div *ngIf="bill.price">{{bill.price * 1.24}}</div>
+    </div>
+    <div class="billing_item">
+      <div>Pvm</div>
+      <div>{{date | date: "dd.MM.yyyy"}}</div>
+    </div>
+</form>
+</div>

@@ -1,0 +1,23 @@
+#logo {
+    background: white;
+    font-size: 70px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    cursor: default;
+    color: #934A8A;
+    height: 10vh;
+    text-align: center;
+    border: 1px solid #3B0034;
+}
+
+#logo img {
+    margin: 0;
+    padding: 0;
+    height: 8vh;
+    width: auto;
+    padding: 1vh 0;
+}

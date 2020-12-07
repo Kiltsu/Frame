@@ -1,0 +1,10 @@
+<div class="slideshow">
+  <h2>{{title}}</h2>
+  <div *ngFor="let album of albums" class="album" (click)="doSelectAlbum(album)">
+    <div>
+    <img src="../assets/icons/camera.svg" alt="Album" class="album_icon"/>
+    <div class="label">{{album.name}}</div>
+    </div>
+  </div>
+  <app-slideshow title="Kuvia" [selectedAlbum]="selectedAlbum"></app-slideshow>
+</div>

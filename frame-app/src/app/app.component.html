@@ -1,0 +1,11 @@
+<div id="background">
+    <app-site-header logo="kiltsu_logo.png"></app-site-header>
+    <nav id="main_nav">
+        <a routerLink="/news" routerLinkActive="active">Etusivu</a>
+        <a routerLink="/gallery" routerLinkActive="active">Galleria</a>
+    </nav>
+    <div id="content">
+        <router-outlet></router-outlet>
+    </div>
+    <app-footer rightsHolder="Janne Kiljunen" year="2020"></app-footer>
+</div>

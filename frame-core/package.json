@@ -1,0 +1,12 @@
+{
+  "name": "frame-core",
+  "version": "0.0.0",
+  "description": "frame-core",
+  "main": "app.js",
+  "author": {
+    "name": "Kilzeus"
+  },
+  "devDependencies": {
+    "@types/node": "^6.14.13"
+  }
+}

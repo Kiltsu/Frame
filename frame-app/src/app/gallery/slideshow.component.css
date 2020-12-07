@@ -1,0 +1,28 @@
+.label {
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 0.2em;
+  background: #B176A9;
+  margin: 1em 0;
+}
+.thumbnail {
+  display: inline-block;
+  width: 10em;
+  padding: 1em;
+  vertical-align:top;
+}
+  .thumbnail:hover {
+    background: #580F4F;
+    border-radius: 2em;
+  }
+.thumbnail img {
+  height: auto;
+  width: 10em;
+}
+.selected_album {
+  width: 100%;
+}
+.selected_image {
+  width: 100%;
+  height: auto;
+}

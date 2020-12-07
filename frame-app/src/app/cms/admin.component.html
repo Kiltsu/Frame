@@ -1,0 +1,12 @@
+<login_prompt></login_prompt>
+<div>
+    <div class="page_list">
+        <div *ngFor="let page of pages">
+            <span class="page_name">{{page.name}}</span>
+            <span>{{page.header}}</span>
+            <span><button (click)="setSelected(page)">Muokkaa</button></span>
+        </div>
+    </div>
+    <button (click)="addPage()">Lisää sivu</button>
+    <content_editor [page]="selectedPage"></content_editor>
+</div>

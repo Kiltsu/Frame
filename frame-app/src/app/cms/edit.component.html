@@ -1,0 +1,7 @@
+<div *ngIf="page">
+    <div class="editor_row"><span class="editor_label">Nimi</span><span><input type="text" [(ngModel)]="page.name" /></span></div>
+    <div class="editor_row"><span class="editor_label">Otsikko</span><span><input type="text" [(ngModel)]="page.header" /></span></div>
+    <div class="editor_row"><span class="editor_label">Kuvaus</span><span><textarea [(ngModel)]="page.description"></textarea></span></div>
+    <div class="editor_row"><span class="editor_label">Sisältö</span><span><textarea [(ngModel)]="page.content"></textarea></span></div>
+    <button (click)="commit()">Tallenna</button>
+</div>

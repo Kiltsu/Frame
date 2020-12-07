@@ -1,0 +1,24 @@
+.page_list {
+    padding: 1em;
+    border: 1px solid black;
+    margin: 1em;
+}
+.page_name {
+    font-weight: 700;
+    background: #B176A9;
+    padding: 0 2em;
+}
+.content_editor {
+    margin: 2em;
+}
+.editor_label {
+    width: 10em;
+    display: inline-block;
+}
+.editor_row {
+    margin: 1em;
+}
+.editor_row textarea, .editor_row input {
+    width: 50%;
+}
+

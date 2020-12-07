@@ -1,0 +1,11 @@
+<div class="slideshow" [hidden]="!album.id">
+  <div *ngFor="let image of results" class="thumbnail" (click)="doSelectImage(image);">
+    <img src="../assets/{{image.file}}" alt="Could not load">
+    <div class="label">{{image.name}}</div>
+  </div>
+  <div *ngIf="selectedImage">
+    <div class="label">{{selectedImage.name}}</div>
+    <img src="../assets/{{selectedImage.file}}" alt="Could not load" class="selected_image">
+    <div>{{selectedImage.caption}}</div>
+  </div>
+</div>
